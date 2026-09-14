@@ -20,17 +20,43 @@
   const materialSelect = document.getElementById('calcMaterial');
   const priceOut = document.getElementById('calcPrice');
   const noteOut = document.getElementById('calcNote');
+  const errorOut = document.getElementById('calcError');
 
   function fmt(n) {
     return Math.round(n / 100) * 100 + ' ₽';
   }
 
+  function validateDim(cat) {
+    const raw = dimInput.value.trim();
+    if (raw === '') return { valid: false, message: 'Укажите размер' };
+    const dim = parseFloat(raw);
+    if (isNaN(dim) || dim <= 0) return { valid: false, message: 'Размер должен быть больше нуля' };
+    if (dim < cat.dimMin || dim > cat.dimMax) {
+      return { valid: false, message: 'Допустимый диапазон: ' + cat.dimMin + '–' + cat.dimMax + ' м' };
+    }
+    return { valid: true, dim: dim };
+  }
+
   function recalc() {
     if (!catSelect) return;
     const cat = CATEGORIES[catSelect.value];
-    const dim = parseFloat(dimInput.value) || cat.dimDefault;
+    const check = validateDim(cat);
+
+    if (!check.valid) {
+      dimInput.setAttribute('aria-invalid', 'true');
+      errorOut.textContent = check.message;
+      errorOut.hidden = false;
+      priceOut.textContent = '—';
+      noteOut.textContent = 'Исправьте размер, чтобы увидеть ориентировочную цену.';
+      return;
+    }
+
+    dimInput.removeAttribute('aria-invalid');
+    errorOut.hidden = true;
+    errorOut.textContent = '';
+
     const mult = MATERIAL_MULT[materialSelect.value] || 1;
-    const raw = dim * cat.rate * mult;
+    const raw = check.dim * cat.rate * mult;
     const price = Math.max(raw, cat.min * mult);
     priceOut.textContent = 'от ' + fmt(price);
     noteOut.textContent = cat.unit === 'sqm'
@@ -55,10 +81,22 @@
     updateDimBounds();
   }
 
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      btn.closest('.faq-item').classList.toggle('open');
+  // FAQ accordion — max-height is measured from real content, never a guessed constant,
+  // so a longer answer never gets silently clipped.
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var panel = item.querySelector('.faq-a');
+    item.querySelector('.faq-q').addEventListener('click', function () {
+      var isOpen = item.classList.toggle('open');
+      panel.style.maxHeight = isOpen ? panel.scrollHeight + 'px' : '0px';
+    });
+    if (item.classList.contains('open')) {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.faq-item.open .faq-a').forEach(function (panel) {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
     });
   });
 
