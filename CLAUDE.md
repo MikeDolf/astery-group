@@ -52,6 +52,14 @@ Pacing discussed with the owner: slower, quality-first for the foundational cate
 
 Giant: ekb.bestmebelshop.ru. Major на-заказ specialists: kupi-kupe.ru, na-zakaz-mebel.com, mebelzakaz-ekb.ru, mebel-zakaz-ekaterinburg.ru, kupeural.ru, td-komandor.ru, ekbkupe.ru, e-kupe.ru. Kitchen specialists: lovekuhnya.ru, marya.ru, kukhni-na-zakaz-ekaterinburg.ru, kuhnya-ekb.ru. Commercial: ekb.express-office.ru (growing, #1 on "офисная мебель"), ekb-torg.ru, torgstyle-ekb.ru.
 
-## Not yet decided
+## Architecture (decided, first page built)
 
-No page has been built yet, so no CSS/markup convention is established for this repo. The sibling site (`MikeDolf.github.io`) inlines a full `<style>` block per page with no shared CSS file — given this project will run to hundreds of pages, a shared stylesheet is probably worth doing differently here, but that's an open call for whoever builds the first real page, not a decision already made.
+Unlike the sibling site (`MikeDolf.github.io`, which inlines CSS per page), this project uses a **shared design system**: `/assets/style.css` and `/assets/main.js`, referenced from every page with absolute paths (`/assets/style.css`). Given this project is planned to run to hundreds of pages, per-page-duplicated CSS was judged not worth repeating here — add new pages against the existing tokens/classes in `style.css` rather than inlining new ones.
+
+Design tokens (CSS custom properties in `:root` of `style.css`): warm stone background (`--bg`), deep teal-green brand accent (`--accent`), muted brass/gold for CTAs (`--gold`). Type pairing: Fraunces (display/headings) + Manrope (body/UI) + IBM Plex Mono (numbers, prices, eyebrows), loaded from Google Fonts.
+
+**Homepage (`index.html`) is built** as the "мебель на заказ екатеринбург" hub page (structure informed by e-kupe.ru and kupeural.ru's category-page pattern, but the visual design and copy are original — no elements were copied). Sections: hero → category grid (links to future category pages, currently on-page anchors since those pages don't exist yet) → price calculator (client-side, ballpark estimates only — clearly labeled as approximate, no fabricated fixed SKU prices) → process steps → trust/differentiators → FAQ → lead form (client-side demo only, no backend — shows a success state, doesn't send anywhere yet) → footer.
+
+**Deliberately honest, not copied from competitors:** the trust/differentiator copy avoids fabricated claims competitors use (false "N years in business," false "own production") because this is a real business about to go live — the copy instead leans on the genuine partner-network model (comparing multiple workshops, fixed price in contract, free measurement) as the actual differentiator.
+
+**Known placeholder content that must be replaced before real launch:** phone number (`+7 (343) 000-00-00`), email (`info@astery-group.ru`), and the hero visual (currently a labeled placeholder block, not a real project photo) — all clearly fake/placeholder, not real business data.
