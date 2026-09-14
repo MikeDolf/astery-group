@@ -63,3 +63,9 @@ Design tokens (CSS custom properties in `:root` of `style.css`): warm stone back
 **Deliberately honest, not copied from competitors:** the trust/differentiator copy avoids fabricated claims competitors use (false "N years in business," false "own production") because this is a real business about to go live — the copy instead leans on the genuine partner-network model (comparing multiple workshops, fixed price in contract, free measurement) as the actual differentiator.
 
 **Known placeholder content that must be replaced before real launch:** phone number (`+7 (343) 000-00-00`), email (`info@astery-group.ru`), and the hero visual (currently a labeled placeholder block, not a real project photo) — all clearly fake/placeholder, not real business data.
+
+## Blog (started, ahead of the phased plan)
+
+The Articles layer from the phased plan (~215 pages, originally last) was pulled forward: `/blog/` is a hub page (`blog/index.html`) plus one folder per post (`blog/<slug>/index.html`), same clean-URL convention as the rest of the site. Chosen as the first 3 posts specifically because they don't depend on real partner project photos (unlike case studies, which stay blocked on the partner) and each ties back into the homepage: a materials guide (ЛДСП/МДФ — also closes the jargon gap a design critique flagged), a measurement how-to, and a kitchen pricing breakdown that reinforces the calculator's own numbers. Each article links back into the homepage's anchors (`/#kalkulyator`, `/#zayavka`) via a mid-article `.article-cta` block rather than duplicating the calculator/lead form on every post.
+
+Article byline is `Organization` (Astery Group), never a fabricated `Person` — matches the no-fabricated-trust-signals commitment in PRODUCT.md. New posts: add to `sitemap.xml`, link from `blog/index.html`'s `.article-list`, and reuse the `.article-hero`/`.article-body`/`.article-cta` classes in `style.css` rather than inlining new ones.

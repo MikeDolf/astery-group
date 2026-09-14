@@ -23,7 +23,7 @@
   const errorOut = document.getElementById('calcError');
 
   function fmt(n) {
-    return Math.round(n / 100) * 100 + ' ₽';
+    return new Intl.NumberFormat('ru-RU').format(Math.round(n / 100) * 100) + ' ₽';
   }
 
   function validateDim(cat) {
@@ -115,7 +115,8 @@
   const mobileNav = document.getElementById('mobileNav');
   if (burger && mobileNav) {
     burger.addEventListener('click', function () {
-      mobileNav.classList.toggle('open');
+      const isOpen = mobileNav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', String(isOpen));
     });
   }
 })();
