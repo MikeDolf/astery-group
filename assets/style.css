@@ -3,23 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg: #F7F3EC;
-  --bg-alt: #EFE8D9;
+  --bg: #F5F5F3;
+  --bg-alt: #EAEAE7;
   --surface: #FFFFFF;
-  --ink: #241F1A;
-  --ink-2: #5B5248;
-  --ink-3: #8B8175;
-  --line: #E1D8C5;
-  --line-strong: #CBBFA8;
+  --ink: #1A1A18;
+  --ink-2: #5C5C57;
+  --ink-3: #5C5C57;
+  --line: #E1E0DC;
+  --line-strong: #C7C6C0;
 
-  --accent: #1F5C52;
-  --accent-dark: #163F38;
-  --accent-soft: #DCEAE6;
-  --on-accent: #F6FBF9;
+  --accent: #2B2B28;
+  --accent-dark: #000000;
+  --accent-soft: #E7E7E4;
+  --on-accent: #FAFAF9;
 
-  --gold: #8A5F2C;
-  --gold-dark: #6E4B1D;
-  --gold-soft: #F2E6D3;
+  --gold: #86622D;
+  --gold-dark: #6B4E23;
+  --gold-soft: #EFE6D4;
 
   --ok: #2F7D4F;
   --ok-soft: #E5F3EA;
@@ -29,7 +29,7 @@
 
   --radius: 14px;
   --radius-sm: 8px;
-  --shadow: 0 1px 2px rgba(36,31,26,0.06), 0 8px 24px rgba(36,31,26,0.06);
+  --shadow: 0 1px 2px rgba(26,26,24,0.06), 0 8px 24px rgba(26,26,24,0.06);
 
   --f-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --f-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -83,7 +83,7 @@ section { padding-block: 72px; }
 /* ---------- header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(247,243,236,0.92);
+  background: rgba(245,245,243,0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -239,9 +239,9 @@ section { padding-block: 72px; }
 .lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .lead-section .eyebrow { color: var(--gold-soft); }
 .lead-section h2 { color: #fff; font-size: var(--step-3); font-weight: 600; margin-bottom: 16px; }
-.lead-section .hero-lead { color: rgba(246,251,249,0.75); }
+.lead-section .hero-lead { color: rgba(250,250,249,0.75); }
 .lead-benefits { list-style: none; margin: 26px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.lead-benefits li { display: flex; gap: 10px; align-items: baseline; font-size: var(--step--1); color: rgba(246,251,249,0.85); }
+.lead-benefits li { display: flex; gap: 10px; align-items: baseline; font-size: var(--step--1); color: rgba(250,250,249,0.85); }
 .lead-benefits li::before { content: "—"; color: var(--gold-soft); flex-shrink: 0; }
 
 .lead-form { background: var(--surface); border-radius: var(--radius); padding: 34px; color: var(--ink); box-shadow: var(--shadow); }
