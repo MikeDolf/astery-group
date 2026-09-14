@@ -18,17 +18,17 @@ Secondary (explicitly not the launch focus): small businesses in Yekaterinburg n
 
 ## Product Purpose
 
-Astery Group is a lead-generation / brokerage site — it does not manufacture furniture itself. It matches a customer's custom-furniture request to one of several vetted local workshops (mastерские) in Yekaterinburg, coordinates the measurement and quote, and earns a commission from the connection. Success is a qualified phone lead that converts into a completed workshop job.
+**Revised 2026-09 — direct-brand positioning, not broker framing.** Astery Group presents to customers as a direct furniture-on-order company: the single accountable brand for the whole order, from measurement to installation. Operationally it still works through a production partnership rather than owning a factory (one confirmed today, specialized in шкафы-купе — see Operating Context), but that is a backend detail, not the customer-facing story. The earlier "we compare 2–3 vetted workshops for you" broker/marketplace framing is retired: the owner judged it reads as low-trust intermediary positioning and hurts competitiveness against direct-brand competitors. Success is still a qualified lead that converts into a completed order.
 
 ## Positioning
 
-The honest, defensible differentiator — validated against direct competitor research (e-kupe.ru, kupeural.ru) — is comparison and curation: Astery brings 2–3 matched workshop options to the customer instead of being a single shop with one price and one queue, without the overhead of a retail showroom. This is deliberately **not** "own production since [year]" or "N years in business" — those are the exact unverifiable claims found on competitor sites that this project must not replicate.
+The differentiator is being the direct, accountable point of contact for the whole order, backed by a real production partnership — not a showroom's markup, and not an anonymous marketplace of workshops. **What stays off-limits** (unchanged from before): fabricated years-in-business, fake reviews, invented production history, or any specific factual claim that isn't true. The honesty commitment in Brand Commitments is about not fabricating *specific false facts* — it was never about foregrounding "we're just an intermediary," and dropping that framing doesn't touch it. Where exactly the line sits on affirmative claims like "мы производим мебель" (a partner-backed "we" vs. literally owning production) is a wording decision for the homepage-copy rewrite this positioning change still needs — flagged in CLAUDE.md, not resolved here.
 
 ## Operating Context
 
-Workflow: customer submits a lead (phone) → free in-home measurement → Astery presents 2–3 workshop options matched to budget/timeline → customer picks → workshop manufactures → delivery/install.
+Workflow: customer submits a lead (phone) → free in-home measurement → production via Astery's partner workshop, matched to budget/timeline → delivery/install. Presented to the customer as Astery's own capability, not as "one of several options we found for you."
 
-The business currently has **one confirmed active partner relationship**, specialized in шкафы-купе. Other categories already live on the site (кухни, гардеробные, кровати, мебель для ванной, etc.) do not yet have a confirmed partner workshop behind them — this is an operating gap, not just a content gap, and worth the owner's attention as categories get real traffic.
+The business currently has **one confirmed active partner relationship**, specialized in шкафы-купе. Other categories already live on the site (кухни, гардеробные, кровати, мебель для ванной, etc.) do not yet have a confirmed partner workshop behind them — this is an operating gap, not just a content gap, and worth the owner's attention as categories get real traffic. This gap matters more under direct-brand positioning than it did under broker framing: a broker can say "we don't have a match yet," a direct brand can't.
 
 ## Capabilities and Constraints
 
