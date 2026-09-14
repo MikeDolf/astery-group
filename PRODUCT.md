@@ -53,7 +53,7 @@ Name: **Astery Group**. Wordmark as already built: "ASTERY." (with trailing peri
 
 1. Never fabricate trust signals — no invented years-in-business, no fake testimonials, no claims the business can't back up. Direct, deliberate contrast to observed competitor practice.
 2. Price transparency without false precision — calculators and category pages give honest "от" estimates labeled as approximate, never fixed prices for specific products that don't exist yet.
-3. Structure may borrow from competitors; visuals and copy must not. A new page's layout can take cues from validated competitor patterns; design and wording stay original.
+3. Structure and topic coverage may be informed by competitors; wording is always original. A new page's layout, section list, and the questions or angles it addresses can take cues from competitor pages and their content — but text is always written fresh, never translated or lightly reworded from a competitor's page. This is a legal boundary, not a style preference: near-verbatim reuse of another site's copy is a copyright risk for the business, not just an originality nice-to-have.
 4. Build against validated demand — new pages and categories are justified by the keyword research already on file, not by guessing what "should" sell.
 5. Yekaterinburg-first, residential-first — commercial/B2B furniture stays a secondary track until the primary residential funnel has traction.
 
