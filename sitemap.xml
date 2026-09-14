@@ -11,6 +11,41 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://astery-group.ru/vstroennye-shkafy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/kuhni/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/garderobnye/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/prihozhie/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/mebel-dlya-vannoy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/krovati-komody-tumby/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/gostinaya/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://astery-group.ru/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
