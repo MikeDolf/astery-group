@@ -154,7 +154,6 @@ section { padding-block: 72px; }
 .hero .trust-row svg { color: var(--gold-soft); }
 @media (max-width: 900px) {
   .hero { padding-block: 72px 64px; }
-  .hero-video { object-fit: contain; }
 }
 
 /* ---------- categories ---------- */
