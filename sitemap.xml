@@ -80,4 +80,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://astery-group.ru/blog/razmery-krovati-pod-matras/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/krovat-s-yashchikami-ili-podyomnym-mehanizmom/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/tumba-pod-rakovinu-v-malenkuyu-vannuyu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
