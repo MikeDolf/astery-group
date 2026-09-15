@@ -73,9 +73,17 @@ The lead-form category `<select>` (`#leadCategory`) is the same 9 options on eve
 
 **Deliberately honest, not copied from competitors:** the trust/differentiator copy avoids fabricated claims competitors use (false "N years in business," false "own production," fake reviews) because this is a real business about to go live.
 
-**Resolved (2026-09):** phone and email placeholders are replaced with real data sitewide (footer + JSON-LD) — see PRODUCT.md Evidence on Hand. **Still placeholder:** the hero visual (currently a labeled placeholder block, not a real project photo) — replace once the partner provides real project photos.
+**Resolved (2026-09):** phone and email placeholders are replaced with real data sitewide (footer + JSON-LD) — see PRODUCT.md Evidence on Hand. **Resolved (2026-09):** the homepage hero placeholder box is replaced with a full-width looping background video (`assets/hero-bg.mp4` + `assets/hero-poster.jpg`, H.264/AAC-stripped, ~2.8MB, 1280×720, 10s loop) — see "Hero background video" below. Category pages still have no visual, matching their existing text-only pattern — not extended there yet.
 
 **Positioning rewrite done (2026-09).** The broker/marketplace framing flagged as stale is fixed sitewide (hero, why-us section, the production FAQ answer, meta/JSON-LD descriptions, footer tagline/copyright on every page). Direct-brand voice now: "we make," "one team," never "we compare workshops for you." Still true and unchanged: no factory-ownership claim, no fabricated facts — see PRODUCT.md Positioning for exactly where that line sits.
+
+## Hero background video
+
+The homepage hero (`.hero` in `index.html`) is a full-bleed dark section: `<video class="hero-video">` (autoplay/muted/loop/playsinline, `poster="/assets/hero-poster.jpg"`) behind a `.hero-video-overlay` dark gradient, with `.hero-content` (text/CTAs/trust-row) laid over it in light-on-dark styling. `.hero-visual`/`.hero-grid` (the old two-column placeholder layout) are gone — homepage-only classes, never used elsewhere, safe to keep removing/repurposing if the hero changes again.
+
+Current video (`assets/hero-bg.mp4`) is AI-generated (Veo, via the owner's own Gemini prompt) — a 10s, 1280×720, H.264/yuv420p loop of a graphite-toned apartment corridor with built-in storage, matching the site's palette. Audio track was stripped (`ffmpeg -c:v copy -an -movflags +faststart`) since it's muted/decorative only; `-movflags +faststart` keeps it web-streamable. Has a small AI-provenance watermark (sparkle icon, bottom-right) baked into the frame from the generation tool — not fully hidden by the overlay, known and accepted, not a bug.
+
+To replace: drop a new file at `assets/hero-bg.mp4` (keep it H.264/AAC or H.264-video-only for universal browser support — VP9/AV1 are not safe defaults here), regenerate the poster with `ffmpeg -i assets/hero-bg.mp4 -vf "select=eq(n\,0)" -vframes 1 -q:v 3 assets/hero-poster.jpg`, and verify locally with a Range-supporting static server (`http-server`, not Python's `http.server` — it doesn't serve HTTP Range requests, which breaks `<video>` playback testing, though production GitHub Pages handles Range fine).
 
 ## Blog (started, ahead of the phased plan)
 
