@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-The site for **astery-group.ru** — a lead-generation site for custom-made furniture (мебель на заказ) in Yekaterinburg, Russia. The business model is commission/partner-based: the site generates leads for furniture producers/workshops (the owner already has partner relationships, particularly for built-in/sliding wardrobes), not retail sales of ready-made furniture.
+The site for **astery-group.ru** — a lead-generation site for custom-made furniture (мебель на заказ) in Yekaterinburg, Russia. Presented to customers as a direct furniture-on-order brand (see PRODUCT.md Positioning) — production runs through a partner workshop behind the scenes (confirmed today for шкафы-купе), but that's not the customer-facing story. Operated by a registered самозанятый (self-employed, NPD taxpayer) — real business requisites are live in the footer of every page; see PRODUCT.md Evidence on Hand.
 
-Hosted on GitHub Pages directly from this repo (`MikeDolf/astery-group`), branch `main`, served via the custom domain in `CNAME`. No build step, no framework — static HTML served as-is, same approach as the owner's other site (`MikeDolf/MikeDolf.github.io`).
+Hosted on GitHub Pages directly from this repo (`MikeDolf/astery-group`), branch `main`, served via the custom domain in `CNAME`. No build step, no framework — static HTML served as-is, same approach as the owner's other site (`MikeDolf/MikeDolf.github.io`). DNS/HTTPS confirmed working 2026-09.
 
-**Current state: bare scaffold only.** `index.html` is a `noindex` placeholder ("Сайт в разработке") put up so the domain resolves to something while DNS/Pages propagate. No real content has been built yet — everything below is the plan and research to build from, not a description of existing code.
+**Current state: live, 13 pages.** Homepage, all 8 category pages from the homepage cat-grid, and a 3-post blog are built and shipped — not a scaffold. Contact channel is Max messenger, not phone — see "No phone calls" in PRODUCT.md Capabilities and Constraints before adding any contact CTA.
 
 ## Content strategy — validated, don't re-derive
 
@@ -73,7 +73,7 @@ The lead-form category `<select>` (`#leadCategory`) is the same 9 options on eve
 
 **Deliberately honest, not copied from competitors:** the trust/differentiator copy avoids fabricated claims competitors use (false "N years in business," false "own production," fake reviews) because this is a real business about to go live.
 
-**Known placeholder content that must be replaced before real launch:** phone number (`+7 (343) 000-00-00`), email (`info@astery-group.ru`), and the hero visual (currently a labeled placeholder block, not a real project photo) — all clearly fake/placeholder, not real business data.
+**Resolved (2026-09):** phone and email placeholders are replaced with real data sitewide (footer + JSON-LD) — see PRODUCT.md Evidence on Hand. **Still placeholder:** the hero visual (currently a labeled placeholder block, not a real project photo) — replace once the partner provides real project photos.
 
 **Positioning rewrite done (2026-09).** The broker/marketplace framing flagged as stale is fixed sitewide (hero, why-us section, the production FAQ answer, meta/JSON-LD descriptions, footer tagline/copyright on every page). Direct-brand voice now: "we make," "one team," never "we compare workshops for you." Still true and unchanged: no factory-ownership claim, no fabricated facts — see PRODUCT.md Positioning for exactly where that line sits.
 
