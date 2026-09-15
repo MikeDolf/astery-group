@@ -88,9 +88,11 @@ section { padding-block: 72px; }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; gap: 28px; height: 76px; }
-.logo { font-family: var(--f-display); font-weight: 600; font-size: 1.4rem; letter-spacing: -0.01em; white-space: nowrap; }
+.logo { display: flex; align-items: center; gap: 10px; font-family: var(--f-display); font-weight: 600; font-size: 1.4rem; letter-spacing: -0.01em; white-space: nowrap; }
 .logo span { color: var(--accent); }
-.logo small { display: block; font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); font-weight: 400; margin-top: 1px; }
+.logo-mark { flex-shrink: 0; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.05; }
+.logo-text small { display: block; font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); font-weight: 400; margin-top: 3px; }
 .main-nav { display: flex; gap: 4px; flex: 1; overflow-x: auto; scrollbar-width: none; }
 .main-nav::-webkit-scrollbar { display: none; }
 .main-nav a {
