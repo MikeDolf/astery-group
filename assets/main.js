@@ -119,4 +119,16 @@
       burger.setAttribute('aria-expanded', String(isOpen));
     });
   }
+
+  // Back-to-top button — long-form article pages only
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    });
+    backToTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 })();
