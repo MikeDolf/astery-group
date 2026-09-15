@@ -95,4 +95,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://astery-group.ru/blog/garderobnaya-ili-shkaf-kupe/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/kak-splanirovat-garderobnuyu-v-nishe/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/prihozhaya-v-uzkiy-koridor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
