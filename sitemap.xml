@@ -65,4 +65,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://astery-group.ru/blog/stoleshnitsa-dlya-kuhni/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/razmery-kuhonnogo-garnitura/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/kak-vybrat-tumbu-pod-rakovinu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
