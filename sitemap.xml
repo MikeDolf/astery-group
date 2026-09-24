@@ -155,4 +155,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://astery-group.ru/blog/skolko-stoit-shkaf-kupe-na-zakaz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/napolnenie-shkafa-kupe/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://astery-group.ru/blog/fartuk-dlya-kuhni/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
