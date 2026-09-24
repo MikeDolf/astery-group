@@ -36,7 +36,7 @@
   --f-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
 
   --step--1: clamp(0.82rem, 0.8rem + 0.1vw, 0.88rem);
-  --step-0: clamp(0.98rem, 0.94rem + 0.18vw, 1.06rem);
+  --step-0: clamp(1rem, 0.94rem + 0.18vw, 1.06rem);
   --step-1: clamp(1.15rem, 1.08rem + 0.32vw, 1.32rem);
   --step-2: clamp(1.42rem, 1.28rem + 0.6vw, 1.8rem);
   --step-3: clamp(1.85rem, 1.55rem + 1.3vw, 2.6rem);
@@ -352,7 +352,7 @@ section { padding-block: 72px; }
 .article-body li { margin-bottom: 8px; }
 .article-body li::marker { color: var(--accent); }
 .article-body strong { font-weight: 700; }
-.article-body table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: var(--step--1); }
+.article-body table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: var(--step-0); }
 .article-body th, .article-body td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .article-body th { font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.03em; color: var(--ink-2); font-weight: 700; font-size: 0.78rem; }
 .article-body table { display: block; overflow-x: auto; }
